@@ -3,9 +3,17 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav span {
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.05rem;
 }
 
 .hash-span {
