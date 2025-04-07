@@ -19,14 +19,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 sm:p-6 md:p-9 w-full">
+    <nav className="primary p-4 sm:p-6 md:p-9 w-full">
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">
           <img
             src={logo}
             alt="webiwo logo"
-            className="size-12 md:size-9 object-contain"
+            className="size-12 object-contain"
           />
           <p className="font-medium cursor-pointer text-gray-200 tracking-wide">
             sławomir <span>piwo</span>warski{" "}
