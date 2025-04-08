@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { services } from "../constants";
 
-const About = () => {
+const AboutServices = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -46,35 +46,14 @@ const About = () => {
 
   return (
     <div>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-      <motion.p
-        variants={textVariant()}
-        className="mt-4 text-[#aaa6c3] text-[17px] max-w-5xl leading-[30px]"
-      >
-        I'm a certified Scrum Master and Agile Coach with a passion for building
-        high-performing teams and leading meaningful organizational change. I
-        work hands-on with agile teams, Product Owners, and leadership —
-        delivering impactful training, workshops, and day-to-day guidance. I
-        believe in continuous improvement, lean thinking, and delivering
-        customer-centric solutions incrementally.
-        <br /> With a background in business and systems analysis, quality
-        assurance, and both frontend and backend development, I bring a holistic
-        perspective to every challenge. <br />
-        Over the years, I’ve helped shape digital solutions across banking,
-        e-commerce, logistics, automotive, manufacturing, and the public sector
-        as a...
-      </motion.p>
-      <div className="mt-10 sm:mt-20 flex flex-wrap gap-8 sm:gap-10 w-full">
+      <div className="mt-8 sm:mt-20 flex flex-wrap gap-8 sm:gap-10 w-full">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
       <motion.p
         variants={textVariant()}
-        className="mt-10 text-[#aaa6c3] text-[17px] max-w-5xl leading-[30px]"
+        className="mt-8 text-[#aaa6c3] text-[16px] max-w-5xl leading-[28px]"
       >
         Let’s build something valuable — together!
       </motion.p>
@@ -82,4 +61,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(AboutServices, "about");
