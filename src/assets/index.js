@@ -17,6 +17,11 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import dev from "./tech/dev.png";
+import analysis from "./tech/analysis.png";
+import qa from "./tech/qa.png";
+import agile from "./tech/agile.png";
+
 import shopify from "./company/shopify.png";
 
 export {
@@ -37,5 +42,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  dev,
+  analysis,
+  qa,
+  agile,
   shopify,
 };

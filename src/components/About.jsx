@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   const ServiceCard = ({ index, title, icon }) => (
-    <div className="w-full sm:w-[250px] flex-shrink-0">
+    <div className="w-[140px] sm:w-[240px]">
       <Tilt
         className="w-full"
         glareEnable={true}
@@ -25,15 +25,15 @@ const About = () => {
       >
         <motion.div
           variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-          className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+          className="w-full green-pink-gradient p-[1px] rounded-[20px]"
         >
-          <div className="bg-[#161131] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+          <div className="bg-[#161131] rounded-[20px] py-3 sm:py-4 px-4 sm:px-12 min-h-[180px] sm:min-h-[250px] flex justify-evenly items-center flex-col">
             <img
               src={icon}
               alt="web-development"
               className="w-16 h-16 object-contain"
             />
-            <h3 className="text-white text-[20px] font-bold text-center">
+            <h3 className="text-white text-[15px] sm:text-[20px] font-semibold text-center">
               {title}
             </h3>
           </div>
@@ -51,25 +51,33 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={textVariant()}
         className="mt-4 text-[#aaa6c3] text-[17px] max-w-5xl leading-[30px]"
       >
-        Scrum Master and agile coach, providing support through training,
-        workshops, and daily collaboration with both development teams and
-        Product Owners. Acts as a consultant in organizational transformations.
-        Enthusiast of Lean Management, continuous improvement, and delivering
-        solutions incrementally. Always focused on delivering valuable outcomes
-        that meet the real needs of clients and end users. Experienced business
-        and systems analyst with a solid background in requirements engineering
-        and quality assurance. Also skilled as a backend and frontend developer,
-        with a proven track record in industries such as financial services,
-        e-commerce, logistics, and automotive.
+        I'm a certified Scrum Master and Agile Coach with a passion for building
+        high-performing teams and leading meaningful organizational change. I
+        work hands-on with agile teams, Product Owners, and leadership —
+        delivering impactful training, workshops, and day-to-day guidance. I
+        believe in continuous improvement, lean thinking, and delivering
+        customer-centric solutions incrementally.
+        <br /> With a background in business and systems analysis, quality
+        assurance, and both frontend and backend development, I bring a holistic
+        perspective to every challenge. <br />
+        Over the years, I’ve helped shape digital solutions across banking,
+        e-commerce, logistics, automotive, manufacturing, and the public sector
+        as a...
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10 w-full">
+      <div className="mt-10 sm:mt-20 flex flex-wrap gap-8 sm:gap-10 w-full">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <motion.p
+        variants={textVariant()}
+        className="mt-10 text-[#aaa6c3] text-[17px] max-w-5xl leading-[30px]"
+      >
+        Let’s build something valuable — together!
+      </motion.p>
     </div>
   );
 };

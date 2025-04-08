@@ -14,6 +14,10 @@ import {
   shopify,
   tripguide,
   threejs,
+  dev,
+  analysis,
+  qa,
+  agile,
 } from "../assets";
 
 export const navLinks = [
@@ -33,20 +37,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Scum Master & Agile Coach",
-    icon: html,
+    title: "Frontend & Backend Developer",
+    icon: dev,
   },
   {
     title: "Business & System Analyst",
-    icon: html,
+    icon: analysis,
   },
   {
     title: "Quality Assurance Engineer",
-    icon: html,
+    icon: qa,
   },
   {
-    title: "Frontend & Backend Developer",
-    icon: html,
+    title: "Scum Master & Agile Coach",
+    icon: agile,
   },
 ];
 
