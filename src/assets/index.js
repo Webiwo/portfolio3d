@@ -23,6 +23,14 @@ import qa from "./tech/qa.png";
 import agile from "./tech/agile.png";
 
 import shopify from "./company/shopify.png";
+import capgemini from "./company/capgemini.png";
+import arvato from "./company/arvato.png";
+import qsg from "./company/qsg.png";
+import payu from "./company/payu.png";
+import allegro from "./company/allegro.png";
+import wokiss from "./company/wokiss.png";
+import domdata from "./company/domdata.png";
+import empty from "./company/empty.png";
 
 export {
   logo,
@@ -47,4 +55,12 @@ export {
   qa,
   agile,
   shopify,
+  capgemini,
+  arvato,
+  qsg,
+  payu,
+  allegro,
+  wokiss,
+  domdata,
+  empty,
 };

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { services } from "../constants";
@@ -46,7 +45,7 @@ const AboutServices = () => {
 
   return (
     <div>
-      <div className="mt-8 sm:mt-20 flex flex-wrap gap-8 sm:gap-10 w-full">
+      <div className="flex flex-wrap gap-8 sm:gap-10 w-full">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
@@ -54,9 +53,7 @@ const AboutServices = () => {
       <motion.p
         variants={textVariant()}
         className="mt-8 text-[#aaa6c3] text-[16px] max-w-5xl leading-[28px]"
-      >
-        Let’s build something valuable — together!
-      </motion.p>
+      ></motion.p>
     </div>
   );
 };
