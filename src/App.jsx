@@ -25,7 +25,7 @@ const App = () => {
         <AboutOverview />
         <AboutServices />
         <Experience />
-
+        <Tech />
         <Works />
         <Feedbacks />
 
