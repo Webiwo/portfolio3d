@@ -52,7 +52,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-1">
       <div>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>

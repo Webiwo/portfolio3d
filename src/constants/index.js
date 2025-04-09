@@ -137,7 +137,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "June 2018 - October 2021",
     points: [
-      "Coordinator and Scrum Master in a large-scale program (40 Scrum teams) for a major U.S. financial organization (discover.com), delivered using the Scaled Agile Framework (SAFe).",
+      "Coordinator and Scrum Master in a large-scale program (40 Scrum teams) for a major U.S. financial organization Discover, delivered using the Scaled Agile Framework (SAFe).",
       "Agile Transformation Consultant, Agile Coach, and Scrum Master in several projects run by the logistics company DB Schenker.",
       "Co-organizer and active participant in tech conferences held by the company and the city of Poznań (Pozitive Technologies).",
       "Responsible for developing the QA department at Capgemini Poznań, including talent acquisition and conducting job interviews. Line manager.",
@@ -165,7 +165,7 @@ const experiences = [
     company_name: "PayU",
     icon: payu,
     iconBg: "#383E56",
-    date: "Jan 2023 - Present",
+    date: "December 2011 - January 2017",
     points: [
       "Analyzing, designing, developing, testing and maintaining efficient and scalable IT solutions:",
       "Backend development using Java 7/8, Spring, Spring Boot, and PHP.",
@@ -182,7 +182,7 @@ const experiences = [
     company_name: "Allegro",
     icon: allegro,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "June 2008 - November 2011",
     points: [
       "Designing and developing strategic components of e-commerce platforms using PHP and Oracle for individual and institutional clients across international marketplaces, including allegro.pl, aukro.bg, aukro.cz, aukro.sk, aukro.ro, aukro.ua, molotok.ru, and teszvesz.hu.",
       "Eliciting, documenting, and analyzing business requirements according to BABOK guidelines.",
@@ -197,7 +197,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "contract work in 2006",
     points: [
-      "Designing and building websites for cities and municipalities in Greater Poland using Photoshop, PHP (MODX Revolution), HTML, CSS and Java Script.",
+      "Designing and developing websites for cities and municipalities in the Greater Poland region using Photoshop, PHP (MODX Revolution), HTML, CSS, and JavaScript.",
     ],
   },
   {
@@ -207,7 +207,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "August 2002 - May 2008",
     points: [
-      "Developing and maintaining applications using Sybase PowerBuilder, Borland C++ Builder, Visual Basic, ASP, PHP and Java Script",
+      "Building and maintaining applications with technologies such as Sybase PowerBuilder, Borland C++ Builder, Visual Basic, ASP, PHP, and JavaScript.",
     ],
   },
   {
@@ -217,7 +217,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "August 2000 - May 2002",
     points: [
-      "Developing banking system using Sybase PowerBuilder and Microsoft SQL Server",
+      "Contributing to the development of a banking system using Sybase PowerBuilder and Microsoft SQL Server.",
     ],
   },
 ];

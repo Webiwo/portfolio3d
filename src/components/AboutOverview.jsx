@@ -13,25 +13,28 @@ const AboutOverview = () => {
       </div>
       <motion.p
         variants={textVariant()}
-        className="mt-4 text-[#aaa6c3] text-[16px] max-w-5xl leading-[28px]"
+        className="mt-4 text-[#aaa6c3] text-[16px] max-w-6xl leading-[28px]"
       >
-        I'm a certified Scrum Master and Agile Coach with a passion for building
-        high-performing teams and leading meaningful organizational change. I
-        work hands-on with agile teams, Product Owners, and leadership —
-        delivering impactful training, workshops, and day-to-day guidance. I
-        believe in continuous improvement, lean thinking, and delivering
-        customer-centric solutions incrementally.
+        I am a certified Scrum Master (PSM I, PSM II) and Quality Assurance
+        Engineer (ISTQB Certified Tester - Foundation Level, ISTQB Certified
+        Tester - Advanced Level, Technical Test Analyst) with a passion for
+        building high-performing teams and delivering valuable, user-focused
+        solutions. I work directly with Agile teams, Product Owners, and
+        leadership — providing effective training, workshops, and daily
+        coaching. I believe in continuous improvement, lean thinking, and
+        delivering customer-oriented solutions incrementally.
       </motion.p>
       <motion.p
         variants={textVariant()}
         className="mt-4 text-[#aaa6c3] text-[16px] max-w-5xl leading-[28px]"
       >
+        I remain passionate and actively engaged in technical topics and
+        web/intranet development. <br />
         With a background in business and systems analysis, quality assurance,
-        and both frontend and backend development, I bring a holistic
-        perspective to every challenge. <br />
-        Over the years, I’ve helped shape digital solutions across banking,
-        e-commerce, logistics, automotive, manufacturing, and the public sector
-        as a...
+        and both front-end and back-end development, I bring a holistic
+        perspective to every challenge I take on. Over the years, I’ve helped
+        shape digital solutions in banking, e-commerce, logistics, automotive,
+        manufacturing, and the public sector as a...
       </motion.p>
     </div>
   );
