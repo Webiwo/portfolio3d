@@ -16,6 +16,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import firebase from "./tech/firebase.png";
+import cucumber from "./tech/cucumber.png";
+import selenium from "./tech/selenium.png";
+import rest from "./tech/rest.png";
+import miro from "./tech/miro.png";
+import jira from "./tech/jira.png";
 
 import dev from "./tech/dev.png";
 import analysis from "./tech/analysis.png";
@@ -50,6 +56,12 @@ export {
   tailwind,
   typescript,
   threejs,
+  firebase,
+  cucumber,
+  selenium,
+  rest,
+  miro,
+  jira,
   dev,
   analysis,
   qa,

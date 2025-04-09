@@ -21,6 +21,12 @@ import {
   empty,
   tripguide,
   threejs,
+  firebase,
+  cucumber,
+  selenium,
+  rest,
+  miro,
+  jira,
   dev,
   analysis,
   qa,
@@ -83,10 +89,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -95,24 +97,28 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "Git",
+    icon: git,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Firebase",
+    icon: firebase,
   },
   {
-    name: "git",
-    icon: git,
+    name: "REST API",
+    icon: rest,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Miro",
+    icon: miro,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Jira",
+    icon: jira,
   },
 ];
 
@@ -137,8 +143,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "June 2018 - October 2021",
     points: [
-      "Coordinator and Scrum Master in a large-scale program (40 Scrum teams) for a major U.S. financial organization Discover, delivered using the Scaled Agile Framework (SAFe).",
-      "Agile Transformation Consultant, Agile Coach, and Scrum Master in several projects run by the logistics company DB Schenker.",
+      "Coordinator and Scrum Master in a large-scale program (40 scrum teams located in the US, UK, India and Poland) for a major U.S. financial organization <a target='_blank' style='text-decoration: underline;' href='https://www.discover.com/'>Discover Financial Services</a>, delivered using the Scaled Agile Framework (SAFe).",
+      "Agile Transformation Consultant, Agile Coach, and Scrum Master in several projects run by the logistics company <a target='_blank' style='text-decoration: underline;' href='https://www.dbschenker.com/tscwarsaw-pl/'>DB Schenker</a>.",
       "Co-organizer and active participant in tech conferences held by the company and the city of Poznań (Pozitive Technologies).",
       "Responsible for developing the QA department at Capgemini Poznań, including talent acquisition and conducting job interviews. Line manager.",
       "Guest lecturer in collaboration with Poznań University of Technology and Adam Mickiewicz University",

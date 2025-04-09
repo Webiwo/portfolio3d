@@ -26,7 +26,7 @@ const AboutOverview = () => {
       </motion.p>
       <motion.p
         variants={textVariant()}
-        className="mt-4 text-[#aaa6c3] text-[16px] max-w-5xl leading-[28px]"
+        className="mt-4 text-[#aaa6c3] text-[16px] max-w-6xl leading-[28px]"
       >
         I remain passionate and actively engaged in technical topics and
         web/intranet development. <br />

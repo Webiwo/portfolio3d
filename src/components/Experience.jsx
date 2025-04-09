@@ -6,6 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
+import Parser from "html-react-parser";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -42,7 +43,7 @@ const ExperienceCard = ({ experience }) => {
               letterSpacing: "0.5px",
             }}
           >
-            {point}
+            {Parser(point)}
           </p>
         ))}
       </div>
