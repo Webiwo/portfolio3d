@@ -92,6 +92,7 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+  /*
   {
     name: "Node JS",
     icon: nodejs,
@@ -111,7 +112,7 @@ const technologies = [
   {
     name: "REST API",
     icon: rest,
-  },
+  },*/
 ];
 
 const experiences = [
