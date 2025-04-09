@@ -4,7 +4,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto top-[100px]">
       <div className="px-7 sm:px-10 md:px-13 absolute inset-0 top-[40px] max-w-7xl mx-auto flex items-start gap-5">
         <div className="flex flex-col items-center justify-center">
           <div className="size-4 rounded-full bg-[#915eff]" />
@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Sławomir</span>
+            Hi, I'm <span className="text-[#7f99e0]">Sławomir</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
             Scrum Master, Agile Coach, and Web Developer with a passion for
@@ -25,7 +25,7 @@ const Hero = () => {
 
       <div className="absolute w-full flex justify-center bottom-30 md:bottom-32">
         <a href="#about">
-          <div className="w-[35px] h-[64px] border-4 border-[#aaa6c3] rounded-3xl flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] border-4 border-[#a8a6c3] rounded-3xl flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],

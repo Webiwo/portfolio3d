@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -6,6 +6,22 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const setActiveLinkInMenu = (linkTitle) => {
     setActiveLink(linkTitle);
@@ -19,10 +35,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="primary p-4 sm:p-6 md:p-9 w-full">
+    <nav
+      className={`p-4 sm:p-6 w-full fixed top-0 z-20 ${
+        scrolled ? "bg-black" : "bg-transparent"
+      }`}
+    >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* LOGO */}
-        <Link to="/" className="flex items-center gap-2">
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          onClick={() => {
+            window.scrollTo(0, 0);
+            setActive("");
+          }}
+        >
           <img
             src={logo}
             alt="webiwo logo"

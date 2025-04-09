@@ -1,16 +1,19 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { textVariant } from "../utils/motion";
+import { textVariant, slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 const AboutOverview = () => {
   return (
     <div>
-      <div>
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="mt-30 flex-1 bg-black-100 rounded-2xl"
+      >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </div>
+      </motion.div>
       <motion.p
         variants={textVariant()}
         className="mt-4 text-[#aaa6c3] text-[16px] max-w-6xl leading-[28px]"

@@ -53,18 +53,18 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <div className="mt-1">
+    <div className="mt-30">
       <div>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </div>
-      <div className="mt-20 flex flex-col">
+      <div className="mt-15 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>
-      </div>{" "}
+      </div>
     </div>
   );
 };
