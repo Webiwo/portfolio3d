@@ -112,14 +112,6 @@ const technologies = [
     name: "REST API",
     icon: rest,
   },
-  {
-    name: "Miro",
-    icon: miro,
-  },
-  {
-    name: "Jira",
-    icon: jira,
-  },
 ];
 
 const experiences = [
