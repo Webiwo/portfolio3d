@@ -92,7 +92,7 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  /*
+
   {
     name: "Node JS",
     icon: nodejs,
@@ -101,6 +101,7 @@ const technologies = [
     name: "Git",
     icon: git,
   },
+  /*
   {
     name: "MongoDB",
     icon: mongodb,
