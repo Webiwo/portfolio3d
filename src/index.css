@@ -7,6 +7,10 @@
   color-scheme: dark;
 }
 
+.canvas {
+  touch-action: pan-y !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
