@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { navLinks } from "../constants";
+import { navLinks, profiles } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`p-4 sm:p-6 w-full fixed top-0 z-20 ${
+      className={`p-4 w-full fixed top-0 z-20 ${
         scrolled ? "bg-black" : "bg-transparent"
       }`}
     >
@@ -62,7 +62,7 @@ const Navbar = () => {
         </Link>
 
         {/* LINKS */}
-        <ul className="list-none hidden md:flex gap-10 justify-self-end">
+        <ul className="list-none hidden md:flex md:items-center gap-10">
           {navLinks.map(({ id, title }) => (
             <li
               key={id}
@@ -74,6 +74,15 @@ const Navbar = () => {
               <a href={`#${id}`}>{title}</a>
             </li>
           ))}
+          <ul className="list-none hidden md:flex gap-3">
+            {profiles.map(({ name, icon, url }) => (
+              <li key={name}>
+                <a href={url} target="_blank">
+                  <img className="size-8" src={icon} alt={name} />
+                </a>
+              </li>
+            ))}
+          </ul>
         </ul>
 
         {/* SIDE MENU */}
@@ -103,6 +112,13 @@ const Navbar = () => {
                   } hover:text-white`}
                 >
                   <a href={`#${id}`}>{title}</a>
+                </li>
+              ))}
+              {profiles.map(({ name, url }) => (
+                <li key={name} className="text-gray-400 hover:text-white">
+                  <a href={url} target="_blank">
+                    {name}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -38,6 +38,9 @@ import wokiss from "./company/wokiss.png";
 import domdata from "./company/domdata.png";
 import empty from "./company/empty.png";
 
+import linkedin from "./company/linkedin.png";
+import github from "./company/github.png";
+
 export {
   logo,
   menu,
@@ -75,4 +78,6 @@ export {
   wokiss,
   domdata,
   empty,
+  linkedin,
+  github,
 };

@@ -19,6 +19,8 @@ import {
   wokiss,
   domdata,
   empty,
+  linkedin,
+  github,
   tripguide,
   threejs,
   firebase,
@@ -109,6 +111,19 @@ const technologies = [
     name: "REST API",
     icon: rest,
   },*/
+];
+
+const profiles = [
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    url: "https://www.linkedin.com/in/slawomirpiwowarski/",
+  },
+  {
+    name: "Github",
+    icon: github,
+    url: "https://github.com/Webiwo",
+  },
 ];
 
 const experiences = [
@@ -310,4 +325,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  profiles,
+  testimonials,
+  projects,
+};
