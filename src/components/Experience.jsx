@@ -7,34 +7,42 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import Parser from "html-react-parser";
+import { useTranslation } from "react-i18next";
 
 const ExperienceCard = ({ experience }) => {
+  const { t } = useTranslation();
+
+  // Pobranie punktów z i18n jako tablicy
+  const points = t(`experience.${experience.id}.points`, { returnObjects: true });
+
   return (
     <VerticalTimelineElement
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
-      date={experience.date}
+      date={t(`experience.${experience.id}.date`)}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
-            alt={experience.company_name}
+            alt={t(`experience.${experience.id}.company`)}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">
+          {t(`experience.${experience.id}.title`)}
+        </h3>
         <p
           className="text-[#aaa6c3] text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {t(`experience.${experience.id}.company`)}
         </p>
 
-        {experience.points.map((point, index) => (
+        {points.map((point, index) => (
           <p
             key={`experience-point-${index}`}
             style={{
@@ -52,16 +60,18 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="mt-30">
+    <div className="-mt-10 md:mt-20">
       <div>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>{t("experience.sectionIntro")}</p>
+        <h2 className={styles.sectionHeadText}>{t("experience.sectionTitle")}</h2>
       </div>
-      <div className="mt-15 flex flex-col">
+      <div className="mt-6 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
+          {experiences.map((experience) => (
+            <ExperienceCard key={experience.id} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>

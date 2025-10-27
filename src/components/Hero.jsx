@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative w-full h-screen mx-auto top-[100px]">
       <div className="px-7 sm:px-10 md:px-13 absolute inset-0 top-[40px] max-w-7xl mx-auto flex items-start gap-5">
@@ -10,14 +13,14 @@ const Hero = () => {
           <div className="size-4 rounded-full bg-[#915eff]" />
           <div className="w-1 h-65 md:h-80 violet-gradient" />
         </div>
+        
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#7f99e0]">Sławek</span>
+            {t("hero.greeting")}{" "}
+            <span className="text-[#7f99e0]">{t("hero.name")}</span>
           </h1>
-          <p className={`${styles.heroSubText} text-white-100`}>
-            Scrum Master, Agile Coach, and Web Developer with a passion for
-            building high-performing teams and creating user-centered web
-            solutions.
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            {t("hero.description")}
           </p>
         </div>
       </div>

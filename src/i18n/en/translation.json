@@ -1,0 +1,147 @@
+{
+  "nav": { "about": "About", "work": "Work", "contact": "Contact" },
+  "services": {
+    "frontend_backend": "Frontend & Backend Developer",
+    "analyst": "Business & System Analyst",
+    "qa": "Quality Assurance Engineer",
+    "agile": "Scrum Master & Agile Coach"
+  },
+  "technologies": {
+    "html": "HTML 5",
+    "tailwind": "Tailwind CSS",
+    "javascript": "JavaScript",
+    "react": "React JS",
+    "node": "Node JS",
+    "mongodb": "MongoDB"
+  },
+  "profiles": { "linkedin": "LinkedIn", "github": "GitHub" },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Sławek",
+    "description": "I have been working in the IT industry for 25 years, gaining experience in various roles. Currently, I am passionately developing my skills in the field of ML/AI, aiming to create innovative and valuable solutions in this area."
+  },
+  "about": {
+    "intro": "About Me",
+    "title": "Professional Profile.",
+    "paragraph1": "I am a certified Scrum Master (PSM I, PSM II) and a software quality engineer (ISTQB Certified Tester – Foundation and Advanced Level, Technical Test Analyst).",
+    "paragraph2": "Over the years, I have gained experience in programming, business and systems analysis, experimentation, and learning from mistakes in the spirit of Agile, as well as in continuous improvement (Plan-Do-Check-Act), process visualization, and optimization based on the Lean approach. A focus on quality and a holistic perspective have enabled me to create valuable solutions across various IT domains and industries.",
+    "paragraph3": "I have always been committed to developing my professional skills and broadening my horizons. My openness, curiosity, and passion for learning have led me to consolidate all my acquired skills and apply them in the field of machine learning and artificial intelligence. I am currently intensively developing in this area, ready to leverage my experience to create innovative and valuable ML/AI solutions in a new professional role.",
+    "paragraph4": "I believe that the competencies I have acquired – so essential in the ML/AI domain – can effectively support the implementation of ML/AI projects, helping businesses achieve ambitious goals."
+  },
+  "experience": {
+    "sectionIntro": "What I have done so far",
+    "sectionTitle": "Work Experience.",
+    "nauka": {
+      "title": "Developing my skills in ML/AI",
+      "company": "-",
+      "date": "May 2025 - November 2025",
+      "points": [
+        "Python, Numpy, Pandas, Scikit Learn, Matplotlib, Seaborn, Plotly",
+        "Supervised and unsupervised learning, DNN, CNN, RNN/LSTM",
+        "Tensorflow, PyTorch",
+        "Anaconda, Jupyter Notebooks/Google Colab",
+        "MLOps: Flask, FastAPI, Git, CircleCI, Docker, GoogleCloud, AWS"
+      ]
+    },
+    "arvato": {
+      "title": "Scrum Master, Agile Coach",
+      "company": "Arvato",
+      "date": "November 2021 - April 2025",
+      "points": [
+        "Supporting the organization in Agile transformation.",
+        "Conducting workshops and training sessions for Scrum Masters, Product Owners, development teams, and departments.",
+        "Providing ongoing support to Scrum Masters, development teams, and Product Owners.",
+        "Promoting Agile practices and mindset across the organization, running webinars, and preparing change strategies for leadership."
+      ]
+    },
+    "capgemini": {
+      "title": "Scrum Master, Agile Coach",
+      "company": "Capgemini",
+      "date": "June 2018 - October 2021",
+      "points": [
+        "Coordinator and Scrum Master in a large-scale program (40 scrum teams in USA, UK, India, Poland).",
+        "Agile Transformation Consultant, Agile Coach, and Scrum Master in projects for DB Schenker.",
+        "Co-organizer and active participant in tech conferences in Poznań.",
+        "Responsible for QA department growth in Capgemini Poznań, talent acquisition and interviews.",
+        "Guest lecturer with Poznan University of Technology and Adam Mickiewicz University."
+      ]
+    },
+    "qsg": {
+      "title": "Product Manager",
+      "company": "QSG",
+      "date": "February 2017 - May 2018",
+      "points": [
+        "Maintaining strong client relationships and collaborating on product roadmap.",
+        "Overseeing the software lifecycle of lean manufacturing system.",
+        "Planning, supervising and managing development and release in Faurecia Frames, Wałbrzych.",
+        "Conducting gap analyses, impact assessments, and risk evaluations.",
+        "Close cooperation with business analysis team.",
+        "Collaboration with development teams to deliver features on time.",
+        "Cooperation with QA throughout testing and release decisions."
+      ]
+    },
+    "payu": {
+      "title": "System Analyst, QA Engineer, Developer",
+      "company": "PayU",
+      "date": "December 2011 - January 2017",
+      "points": [
+        "Analysis, design, development, testing and maintenance of scalable IT solutions.",
+        "Backend development (Java 7/8, Spring, Spring Boot, PHP).",
+        "Frontend development (Java JSP/GWT, JavaScript ReactJS).",
+        "Writing complex SQL queries for Oracle databases.",
+        "Automated E2E testing (Java, Selenium, Cucumber), integration and unit tests (JUnit).",
+        "Monitoring system performance (Dynatrace, JMeter, Splunk).",
+        "Automating build, test and deployment processes (Jenkins, Docker, Liquibase).",
+        "Gathering, analyzing and documenting business and technical requirements."
+      ]
+    },
+    "allegro": {
+      "title": "Developer, Business Analyst",
+      "company": "Allegro",
+      "date": "June 2008 - November 2011",
+      "points": [
+        "Designing and developing e-commerce platform components (PHP, Oracle) for individual and institutional clients.",
+        "Gathering, documenting, and analyzing business requirements according to BABOK.",
+        "Conducting requirements workshops and preparing detailed solution specifications."
+      ]
+    },
+    "wokiss": {
+      "title": "Frontend Developer",
+      "company": "WOKISS",
+      "date": "Contract work in 2006",
+      "points": [
+        "Designing and developing websites for cities and municipalities in Greater Poland region (Photoshop, PHP, HTML, CSS, JS)."
+      ]
+    },
+    "domdata": {
+      "title": "Developer",
+      "company": "Domdata",
+      "date": "August 2002 - May 2008",
+      "points": [
+        "Creating and maintaining applications (Sybase PowerBuilder, Borland C++ Builder, VB, ASP, PHP, JS)."
+      ]
+    },
+    "polsoft": {
+      "title": "Developer",
+      "company": "POLSOFT",
+      "date": "August 2000 - May 2002",
+      "points": [
+        "Participated in banking system development (Sybase PowerBuilder, MS SQL Server)."
+      ]
+    }
+  },
+  "contact": {
+    "subtitle": "Get in touch",
+    "title": "Contact Form.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "I'd love to know your name",
+    "emailLabel": "Your Email",
+    "emailPlaceholder": "What is your email address?",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "What would you like to tell me?",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Thank you. I will get back to you as soon as possible.",
+    "error": "Upss, something went wrong. Please, try again."
+  }
+}

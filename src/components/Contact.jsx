@@ -5,8 +5,10 @@ import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -49,7 +51,7 @@ const Contact = () => {
       .then(
         () => {
           setSending(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert(t("contact.success"));
 
           setForm({
             name: "",
@@ -60,8 +62,7 @@ const Contact = () => {
         (error) => {
           setSending(false);
           console.error(error);
-
-          alert("Upss, something went wrong. Please, try again.");
+          alert(t("contact.error"));
         }
       );
   };
@@ -74,8 +75,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-1 bg-[rgb(15,11,34)] p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>{t("contact.subtitle")}</p>
+        <h3 className={styles.sectionHeadText}>{t("contact.title")}</h3>
 
         <form
           ref={formRef}
@@ -83,35 +84,41 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-2">Your Name</span>
+            <span className="text-white font-medium mb-2">
+              {t("contact.nameLabel")}
+            </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="I'd love to know your name"
+              placeholder={t("contact.namePlaceholder")}
               className="bg-[#151030] py-3 px-4 placeholder:text-[#aaa6c3] text-white rounded-lg border-3 border-violet-950 font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-2">Your email</span>
+            <span className="text-white font-medium mb-2">
+              {t("contact.emailLabel")}
+            </span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What is your email address?"
+              placeholder={t("contact.emailPlaceholder")}
               className="bg-[#151030] py-3 px-4 placeholder:text-[#aaa6c3] text-white rounded-lg border-3 border-violet-950 font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-2">Your Message</span>
+            <span className="text-white font-medium mb-2">
+              {t("contact.messageLabel")}
+            </span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What would you like to tell me?"
+              placeholder={t("contact.messagePlaceholder")}
               className="bg-[#151030] py-3 px-4 placeholder:text-[#aaa6c3] text-white rounded-lg border-3 border-violet-950 font-medium"
             />
           </label>
@@ -120,7 +127,7 @@ const Contact = () => {
             type="submit"
             className="bg-[#151030] py-3 px-8 rounded-xl w-fit text-white font-bold shadow-md shadow-black border-3 border-violet-950"
           >
-            {sending ? "Sending..." : "Send"}
+            {sending ? t("contact.sending") : t("contact.send")}
           </button>
         </form>
       </motion.div>

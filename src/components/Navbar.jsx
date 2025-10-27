@@ -2,11 +2,24 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { navLinks, profiles } from "../constants";
 import { logo, menu, close } from "../assets";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+   const translatedNavLinks = [
+    { id: "about", title: t("nav.about") },
+    { id: "work", title: t("nav.work") },
+    { id: "contact", title: t("nav.contact") },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,15 +76,15 @@ const Navbar = () => {
 
         {/* LINKS */}
         <ul className="list-none hidden md:flex md:items-center gap-10">
-          {navLinks.map(({ id, title }) => (
+          {translatedNavLinks.map((link) => (
             <li
-              key={id}
-              onClick={() => setActiveLink(title)}
+              key={link.id}
               className={`${
-                active === title ? "text-white" : "text-gray-400"
-              } hover:text-white`}
+                active === link.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(link.title)}
             >
-              <a href={`#${id}`}>{title}</a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
           <ul className="list-none hidden md:flex gap-3">
@@ -84,6 +97,27 @@ const Navbar = () => {
             ))}
           </ul>
         </ul>
+
+        {/* Language switcher */}
+        <div className="hidden sm:flex gap-2 ml-8">
+          <button
+            onClick={() => changeLanguage("pl")}
+            className={`text-sm ${
+              i18n.language === "pl" ? "text-white" : "text-gray-400"
+            }`}
+          >
+            PL
+          </button>
+          <span className="text-gray-500">|</span>
+          <button
+            onClick={() => changeLanguage("en")}
+            className={`text-sm ${
+              i18n.language === "en" ? "text-white" : "text-gray-400"
+            }`}
+          >
+            EN
+          </button>
+        </div>
 
         {/* SIDE MENU */}
         <div className="self-start md:hidden">
@@ -100,20 +134,47 @@ const Navbar = () => {
           <div
             className={`${
               !isMenuVisible ? "hidden" : "flex"
-            } absolute top-20 right-0 min-w-28 black-gradient rounded-xl justify-center mx-4 py-3 z-10 md:hidden`}
+            } absolute top-20 right-0 min-w-28 black-gradient rounded-xl justify-center mx-4 py-3 pl-3 z-10 md:hidden`}
           >
             <ul className="list-none flex flex-col gap-2">
-              {navLinks.map(({ id, title }) => (
-                <li
-                  key={id}
-                  onClick={() => setActiveLinkInMenu(title)}
-                  className={`${
-                    active === title ? "text-white" : "text-gray-400"
-                  } hover:text-white`}
+              {/* Mobile language switch */}
+              <div className="flex gap-2 mt-4">
+                <button
+                  onClick={() => changeLanguage("pl")}
+                  className={`text-sm ${
+                    i18n.language === "pl" ? "text-white" : "text-gray-400"
+                  }`}
                 >
-                  <a href={`#${id}`}>{title}</a>
+                  PL
+                </button>
+                <span className="text-gray-500">|</span>
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className={`text-sm ${
+                    i18n.language === "en" ? "text-white" : "text-gray-400"
+                  }`}
+                >
+                  EN
+                </button>
+              </div>
+
+              {translatedNavLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                    active === link.title ? "text-white" : "text-secondary"
+                  }`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title);
+                  }}
+                >
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+
+              
+              
               {profiles.map(({ name, url }) => (
                 <li key={name} className="text-gray-400 hover:text-white">
                   <a href={url} target="_blank">

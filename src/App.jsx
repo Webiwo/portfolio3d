@@ -1,16 +1,16 @@
+import "./i18n/i18n";
 import { BrowserRouter } from "react-router-dom";
+import React from "react";
 
 import {
   AboutOverview,
   AboutServices,
+  ImageShowcase,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
+  StarsCanvas
 } from "./components";
 
 const App = () => {
@@ -24,6 +24,12 @@ const App = () => {
 
         <AboutOverview />
         <AboutServices />
+        <div className="my-16 w-full px-4">
+          <ImageShowcase
+            backgroundImage="./images/background.png"
+            authorImage="./images/author.png"
+          />
+      </div>
         <Experience />
         {/*
         <Tech />

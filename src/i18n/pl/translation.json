@@ -1,0 +1,147 @@
+{
+  "nav": { "about": "O mnie", "work": "Doświadczenie", "contact": "Kontakt" },
+  "services": {
+    "frontend_backend": "Frontend & Backend Developer",
+    "analyst": "Analityk biznesowy i systemowy",
+    "qa": "Inżynier jakości oprogramowania",
+    "agile": "Scrum Master & Agile Coach"
+  },
+  "technologies": {
+    "html": "HTML 5",
+    "tailwind": "Tailwind CSS",
+    "javascript": "JavaScript",
+    "react": "React JS",
+    "node": "Node JS",
+    "mongodb": "MongoDB"
+  },
+  "profiles": { "linkedin": "LinkedIn", "github": "GitHub" },
+  "hero": {
+    "greeting": "Cześć, jestem",
+    "name": "Sławek",
+    "description": "Od 25 lat działam w branży IT, zdobywając doświadczenie w różnych rolach. Obecnie z pasją rozwijam się w obszarze ML/AI, chcąc tworzyć innowacyjne i wartościowe rozwiązania w tym obszarze."
+  },
+  "about": {
+    "intro": "O mnie",
+    "title": "Profil zawodowy.",
+    "paragraph1": "Jestem certyfikowanym Scrum Masterem (PSM I, PSM II) oraz inżynierem jakości oprogramowania (ISTQB Certified Tester – Foundation i Advanced Level, Technical Test Analyst).",
+    "paragraph2": "Przez lata zdobywałem doświadczenie w programowaniu, analizie biznesowej i systemowej, eksperymentowaniu oraz uczeniu się na błędach w duchu Agile, a także w ciągłym doskonaleniu (Plan-Do-Check-Act), wizualizacji i optymalizacji procesów zgodnie z podejściem Lean. Dbałość o jakość i holistyczne spojrzenie pozwoliły mi tworzyć wartościowe rozwiązania w różnych obszarach IT i dla różnych branż.",
+    "paragraph3": "Zawsze zależało mi na rozwijaniu kompetencji zawodowych i poszerzaniu horyzontów. Otwartość, ciekawość i pasja do nauki sprawiły, że postanowiłem zebrać wszystkie dotychczasowe umiejętności i wykorzystać je w obszarze uczenia maszynowego i sztucznej inteligencji. Obecnie intensywnie rozwijam się w tym kierunku, gotów wykorzystać swoje doświadczenie w tworzeniu innowacyjnych i wartościowych rozwiązań ML/AI w nowej roli zawodowej.",
+    "paragraph4": "Wierzę, że zdobyte dotychczas kompetencje – tak istotne w obszarze ML/AI – mogą skutecznie wspierać realizację projektów ML/AI, pomagając biznesowi osiągać ambitne cele."
+  },
+  "experience": {
+    "sectionIntro": "Co dotychczas osiągnąłem",
+    "sectionTitle": "Doświadczenie zawodowe.",
+    "nauka": {
+      "title": "Rozwój w obszarze ML/AI",
+      "company": "-",
+      "date": "Maj 2025 - Listopad 2025",
+      "points": [
+        "Python, Numpy, Pandas, Scikit Learn, Matplotlib, Seaborn, Plotly",
+        "Supervised learning, unsupervised learning, DNN, CNN, RNN/LSTM",
+        "Tensorflow, PyTorch",
+        "Anaconda, Jupyter Notebooks/Google Colab",
+        "MLOps: Flask, FastAPI, Git, CircleCI, Docker, GoogleCloud, AWS"
+      ]
+    },
+    "arvato": {
+      "title": "Scrum Master, Agile Coach",
+      "company": "Arvato",
+      "date": "Listopad 2021 - Kwiecień 2025",
+      "points": [
+        "Wsparcie organizacji we wdrażaniu transformacji Agile.",
+        "Prowadzenie warsztatów i szkoleń dla Scrum Masterów, Product Ownerów, zespołów developerskich i działów organizacyjnych.",
+        "Bieżące wsparcie Scrum Masterów, zespołów developerskich i Product Ownerów.",
+        "Promowanie praktyk Agile i mindsetu w całej organizacji, prowadzenie webinarów i przygotowywanie strategii zmian dla kierownictwa."
+      ]
+    },
+    "capgemini": {
+      "title": "Scrum Master, Agile Coach",
+      "company": "Capgemini",
+      "date": "Czerwiec 2018 - Październik 2021",
+      "points": [
+        "Koordynator i Scrum Master w programie na dużą skalę (40 zespołów scrumowych w USA, UK, Indiach i Polsce).",
+        "Agile Transformation Consultant, Agile Coach i Scrum Master w projektach realizowanych przez DB Schenker.",
+        "Współorganizator i aktywny uczestnik konferencji technologicznych w Poznaniu (Pozitive Technologies).",
+        "Odpowiedzialny za rozwój działu QA w Capgemini Poznań, rekrutacja talentów i prowadzenie rozmów kwalifikacyjnych.",
+        "Wykładowca gościnny we współpracy z Politechniką Poznańską i Uniwersytetem im. Adama Mickiewicza."
+      ]
+    },
+    "qsg": {
+      "title": "Product Manager",
+      "company": "QSG",
+      "date": "Luty 2017 - Maj 2018",
+      "points": [
+        "Utrzymywanie silnych relacji z klientami i współpraca nad roadmapą produktu.",
+        "Nadzorowanie cyklu życia oprogramowania systemu lean manufacturing.",
+        "Planowanie, nadzorowanie i zarządzanie rozwojem i wdrożeniem systemu w Faurecia Frames w Wałbrzychu.",
+        "Przeprowadzanie analiz luk, ocen wpływu i ryzyka.",
+        "Ścisła współpraca z zespołem analizy biznesowej.",
+        "Współpraca z zespołami developerskimi w celu terminowego dostarczenia funkcji.",
+        "Współpraca z QA podczas testów i udział w decyzjach wydaniowych."
+      ]
+    },
+    "payu": {
+      "title": "Analityk systemowy, Inżynier QA, Programista",
+      "company": "PayU",
+      "date": "Grudzień 2011 - Styczeń 2017",
+      "points": [
+        "Analiza, projektowanie, rozwój, testowanie i utrzymanie wydajnych i skalowalnych rozwiązań IT.",
+        "Backend: Java 7/8, Spring, Spring Boot, PHP.",
+        "Frontend: Java (JSP, GWT), JavaScript (ReactJS).",
+        "Tworzenie złożonych zapytań SQL dla baz Oracle.",
+        "Automatyzacja testów E2E (Java, Selenium, Cucumber), integracyjnych i jednostkowych (JUnit).",
+        "Monitorowanie wydajności systemu przy użyciu Dynatrace, JMeter i Splunk.",
+        "Automatyzacja procesu budowy, testowania i wdrażania aplikacji (Jenkins, Docker, Liquibase).",
+        "Analiza i dokumentacja wymagań biznesowych i technicznych."
+      ]
+    },
+    "allegro": {
+      "title": "Programista, Analityk Biznesowy",
+      "company": "Allegro",
+      "date": "Czerwiec 2008 - Listopad 2011",
+      "points": [
+        "Projektowanie i rozwój komponentów platform e-commerce (PHP, Oracle) dla klientów indywidualnych i instytucjonalnych.",
+        "Zbieranie, dokumentowanie i analiza wymagań biznesowych zgodnie z BABOK.",
+        "Warsztaty zbierania wymagań i przygotowywanie specyfikacji rozwiązań."
+      ]
+    },
+    "wokiss": {
+      "title": "Frontend Developer",
+      "company": "WOKISS",
+      "date": "Praca kontraktowa w 2006",
+      "points": [
+        "Projektowanie i rozwój stron internetowych dla miast i gmin w regionie Wielkopolski (Photoshop, PHP, HTML, CSS, JS)."
+      ]
+    },
+    "domdata": {
+      "title": "Programista",
+      "company": "Domdata",
+      "date": "Sierpień 2002 - Maj 2008",
+      "points": [
+        "Tworzenie i utrzymanie aplikacji (Sybase PowerBuilder, Borland C++ Builder, VB, ASP, PHP, JS)."
+      ]
+    },
+    "polsoft": {
+      "title": "Programista",
+      "company": "POLSOFT",
+      "date": "Sierpień 2000 - Maj 2002",
+      "points": [
+        "Udział w rozwoju systemu bankowego (Sybase PowerBuilder, MS SQL Server)."
+      ]
+    }
+  },
+  "contact": {
+    "subtitle": "Napisz do mnie",
+    "title": "Kontakt.",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Chciałbym poznać Twoje imię",
+    "emailLabel": "Twój email",
+    "emailPlaceholder": "Jaki jest Twój adres e-mail?",
+    "messageLabel": "Twoja wiadomość",
+    "messagePlaceholder": "Co chciałbyś mi przekazać?",
+    "send": "Wyślij",
+    "sending": "Wysyłanie...",
+    "success": "Dziękuję. Skontaktuję się z Tobą najszybciej jak to możliwe.",
+    "error": "Ups, coś poszło nie tak. Spróbuj ponownie."
+  }
+}

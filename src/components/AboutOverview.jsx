@@ -3,41 +3,46 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant, slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { useTranslation } from "react-i18next";
 
 const AboutOverview = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="mt-30 flex-1 bg-black-100 rounded-2xl"
+        className="mt-20 flex-1 bg-black-100 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t("about.intro")}</p>
+        <h2 className={styles.sectionHeadText}>{t("about.title")}</h2>
       </motion.div>
       <motion.p
         variants={textVariant()}
         className="mt-4 text-[#aaa6c3] text-[16px] max-w-6xl leading-[28px]"
       >
-        I am a certified Scrum Master (PSM I, PSM II) and Quality Assurance
-        Engineer (ISTQB Certified Tester - Foundation Level, ISTQB Certified
-        Tester - Advanced Level, Technical Test Analyst) with a passion for
-        building high-performing teams and delivering valuable, user-focused
-        solutions. I work directly with Agile teams, Product Owners, and
-        leadership — providing effective training, workshops, and daily
-        coaching. I believe in continuous improvement, lean thinking, and
-        delivering customer-oriented solutions incrementally.
+        {t("about.paragraph1")}
       </motion.p>
+
       <motion.p
         variants={textVariant()}
         className="mt-4 text-[#aaa6c3] text-[16px] max-w-6xl leading-[28px]"
       >
-        I remain passionate and actively engaged in technical topics and
-        web/intranet development. <br />
-        With a background in business and systems analysis, quality assurance,
-        and both front-end and back-end development, I bring a holistic
-        perspective to every challenge I take on. Over the years, I’ve helped
-        shape digital solutions in banking, e-commerce, logistics, automotive,
-        manufacturing, and the public sector as a...
+        {t("about.paragraph2")}
+      </motion.p>
+
+      <motion.p
+        variants={textVariant()}
+        className="mt-4 text-[#aaa6c3] text-[16px] max-w-6xl leading-[28px]"
+      >
+        {t("about.paragraph3")}
+      </motion.p>
+
+      <motion.p
+        variants={textVariant()}
+        className="mt-4 text-[#aaa6c3] text-[16px] max-w-6xl leading-[28px]"
+      >
+        {t("about.paragraph4")}
       </motion.p>
     </div>
   );

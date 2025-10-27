@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { services } from "../constants";
+import { useTranslation } from "react-i18next";
 
 const AboutServices = () => {
+  const { t } = useTranslation();
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -29,11 +31,11 @@ const AboutServices = () => {
           <div className="bg-[#161131] rounded-[20px] py-3 sm:py-4 px-4 sm:px-12 min-h-[180px] sm:min-h-[250px] flex justify-evenly items-center flex-col">
             <img
               src={icon}
-              alt="web-development"
+              alt={t(`services.${title}`)}
               className="w-16 h-16 object-contain"
             />
             <h3 className="text-white text-[15px] sm:text-[20px] font-semibold text-center">
-              {title}
+              {t(`services.${title}`)}
             </h3>
           </div>
         </motion.div>
@@ -45,14 +47,14 @@ const AboutServices = () => {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-8 sm:gap-10 w-full">
+      <div className="flex flex-wrap gap-x-8 gap-y-6 w-full">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
       <motion.p
         variants={textVariant()}
-        className="mt-8 text-[#aaa6c3] text-[16px] max-w-5xl leading-[28px]"
+        className="-mt-14 text-[#aaa6c3] text-[16px] max-w-5xl leading-[28px]"
       ></motion.p>
     </div>
   );
