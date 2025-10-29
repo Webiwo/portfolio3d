@@ -14,6 +14,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import ImageShowcase from "./ImageShowcase";
+import Publications from "./Publications";
 
 export {
   Hero,
@@ -30,4 +31,5 @@ export {
   ComputersCanvas,
   StarsCanvas,
   ImageShowcase,
+  Publications
 };

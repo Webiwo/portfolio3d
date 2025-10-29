@@ -1,5 +1,5 @@
 {
-  "nav": { "about": "O mnie", "work": "Doświadczenie", "contact": "Kontakt" },
+  "nav": { "about": "O mnie", "work": "Doświadczenie", "publications": "Publikacje", "contact": "Kontakt" },
   "services": {
     "frontend_backend": "Frontend & Backend Developer",
     "analyst": "Analityk biznesowy i systemowy",
@@ -129,6 +129,10 @@
         "Udział w rozwoju systemu bankowego (Sybase PowerBuilder, MS SQL Server)."
       ]
     }
+  },
+  "publications": {
+    "title": "Publikacje",
+    "subtitle": "Artykuły i eksperymenty"
   },
   "contact": {
     "subtitle": "Napisz do mnie",

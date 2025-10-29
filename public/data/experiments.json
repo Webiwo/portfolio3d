@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Dlaczego zdecydowałem się wybrać ML/IA",
+    "link": "https://github.com/Webiwo/publications/blob/main/articles/ML%20workflow.md",
+    "description": "Daniel Bourke w swoim artykule '6-Step Framework To Tackle Machine Learning Projects' opisuje proces budowania rozwiązania ML. Przedstawiając kolejne kroki zwraca uwagę na różne aspekty, które wymagają spojrzenia na projekt pod różnym kątem w zależności od etapu, na którym znajduje się projekt. Na bazie tego artykułu staram się pokazać jakie kompetencje są istotne w każdym z tych kroków, a co za tym idzie dlaczego podjąłem decyzję, aby rowijać się w tym obszarze."
+  },
+  {
+    "title": "Porównanie algorytmów Ensemble Boosting",
+    "link": "https://github.com/Webiwo/publications/blob/main/experiments/xgboost_catboost_adaboost_gbm_lightgbm.ipynb",
+    "description": "Coogle Colab Notebook - Porównanie wydajności pięciu różnych algorytmów Ensemble Boosting: XGBoost, CatBoost, AdaBoost, GBM, LightGBM"
+  },
+  {
+    "title": "CNN - Computer Vision",
+    "link": "https://github.com/Webiwo/publications/blob/main/experiments/Convolutional_Neural_Networks_and_Computer_Vision_with_TensorFlow.ipynb",
+    "description": "Coogle Colab Notebook - Convolutional Neural Networks - model sprawdza czy na zdjęciu znajduje się Steak czy Pizza. Implementacja modelu Tiny VGG z użyciem TensorFlow."
+  }
+]

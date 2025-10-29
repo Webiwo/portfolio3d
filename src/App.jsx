@@ -10,7 +10,8 @@ import {
   Experience,
   Hero,
   Navbar,
-  StarsCanvas
+  StarsCanvas,
+  Publications
 } from "./components";
 
 const App = () => {
@@ -30,7 +31,10 @@ const App = () => {
             authorImage="./images/author.png"
           />
       </div>
+      <div>
+      </div>
         <Experience />
+        <Publications showHeader={true} columns={2} filePath="/data/experiments.json" />
         {/*
         <Tech />
         <Works />

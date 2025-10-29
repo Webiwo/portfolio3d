@@ -1,5 +1,5 @@
 {
-  "nav": { "about": "About", "work": "Work", "contact": "Contact" },
+  "nav": { "about": "About", "work": "Work", "publications": "Publications", "contact": "Contact" },
   "services": {
     "frontend_backend": "Frontend & Backend Developer",
     "analyst": "Business & System Analyst",
@@ -129,6 +129,10 @@
         "Participated in banking system development (Sybase PowerBuilder, MS SQL Server)."
       ]
     }
+  },
+  "publications": {
+    "title": "Publications",
+    "subtitle": "Articles and Experiments"
   },
   "contact": {
     "subtitle": "Get in touch",

@@ -18,6 +18,7 @@ const Navbar = () => {
    const translatedNavLinks = [
     { id: "about", title: t("nav.about") },
     { id: "work", title: t("nav.work") },
+    { id: "publications", title: t("nav.publications") },
     { id: "contact", title: t("nav.contact") },
   ];
 
