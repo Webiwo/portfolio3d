@@ -25,6 +25,8 @@ const Publications = ({ showHeader = true}) => {
       {showHeader && (
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
+          initial="hidden"
+          animate="show"
           className="flex-1 bg-black-100 rounded-2xl p-6"
         >
           <p className={styles.sectionSubText}>{t("publications.subtitle")}</p>
