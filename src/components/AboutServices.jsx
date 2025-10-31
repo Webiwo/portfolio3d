@@ -8,11 +8,6 @@ import { useTranslation } from "react-i18next";
 
 const AboutServices = () => {
   const { t } = useTranslation();
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const ServiceCard = ({ index, title, icon }) => (
     <div className="w-[140px] sm:w-[240px]">
@@ -42,8 +37,6 @@ const AboutServices = () => {
       </Tilt>
     </div>
   );
-
-  if (!isClient) return null;
 
   return (
     <div>

@@ -32,15 +32,15 @@
     "sectionIntro": "What I have done so far",
     "sectionTitle": "Work Experience.",
     "nauka": {
-      "title": "Developing my skills in ML/AI",
-      "company": "-",
+      "title": "Advancing my skills in ML/A",
+      "company": "",
       "date": "May 2025 - November 2025",
       "points": [
-        "Python, Numpy, Pandas, Scikit Learn, Matplotlib, Seaborn, Plotly",
-        "Supervised and unsupervised learning, DNN, CNN, RNN/LSTM",
-        "Tensorflow, PyTorch",
-        "Anaconda, Jupyter Notebooks/Google Colab",
-        "MLOps: Flask, FastAPI, Git, CircleCI, Docker, GoogleCloud, AWS"
+         "Supervised and unsupervised learning, neural networks (CNN, RNN, LSTM)",
+        "NLP, text classification, sentiment analysis",
+        "Computer Vision, image classification",
+        "MLOps, model deployment, pipeline automation",
+        "Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, PyTorch, Anaconda, Flask, FastAPI, Docker, CircleCI, GitHub, Google Cloud, AWS, MLflow"
       ]
     },
     "arvato": {

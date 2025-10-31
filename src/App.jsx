@@ -11,12 +11,14 @@ import {
   Hero,
   Navbar,
   StarsCanvas,
-  Publications
+  Publications,
+  ScrollToHashElement
 } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToHashElement/>
       <div className="relative z-0 bg-black">
         <div className="background">
           <Navbar />
@@ -34,7 +36,7 @@ const App = () => {
       <div>
       </div>
         <Experience />
-        <Publications showHeader={true} columns={2} filePath="/data/experiments.json" />
+        <Publications showHeader={true} />
         {/*
         <Tech />
         <Works />

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Dlaczego zdecydowałem się wybrać ML/IA",
+    "link": "https://github.com/Webiwo/publications/blob/main/articles/ML%20workflow.md",
+    "description": "Zainspirowany artykułem Daniela Bourke’a „6-Step Framework to Tackle Machine Learning Projects” postanowiłem przyjrzeć się procesowi tworzenia rozwiązań ML krok po kroku. Analizując każdy z etapów, pokazuję, jakie kompetencje są w nich najistotniejsze – i dlaczego właśnie one skłoniły mnie do rozwoju w tym kierunku."
+  },
+  {
+    "title": "SMS Spam Detector App",
+    "link": "http://13.51.244.189/",
+    "description": "Aplikacja jest uruchomiona na AWS na instancji EC2 w kontenerze Docker, z obrazem hostowanym w Amazon ECR. Model wytrenowany na zbiorze danych Kaggle: SMS Spam Collection Dataset.\n Użycie: wpisz wiadomość w języku angielskim np. „You win a new phone” i kliknij przycisk „Check”."
+  },
+    {
+    "title": "Hate Speech Detector App",
+    "link": "http://51.20.180.118/",
+    "description": "Aplikacja jest uruchomiona na AWS na instancji EC2 w kontenerze Docker, z obrazem hostowanym w Amazon ECR. Model wytrenowany na zbiorze danych Kaggle: Hate Speech and Offensive Language Dataset. \n Użycie: wpisz wiadomość w języku angielskim np. „We will fight against him.” i kliknij przycisk „Sprawdź tekst”."
+  },
+  {
+    "title": "Porównanie algorytmów Ensemble Boosting",
+    "link": "https://github.com/Webiwo/publications/blob/main/experiments/xgboost_catboost_adaboost_gbm_lightgbm.ipynb",
+    "description": "Coogle Colab Notebook - Porównanie wydajności pięciu różnych algorytmów Ensemble Boosting: XGBoost, CatBoost, AdaBoost, GBM, LightGBM"
+  },
+  {
+    "title": "CNN - Computer Vision",
+    "link": "https://github.com/Webiwo/publications/blob/main/experiments/Convolutional_Neural_Networks_and_Computer_Vision_with_TensorFlow.ipynb",
+    "description": "Coogle Colab Notebook - Convolutional Neural Networks - model sprawdza czy na zdjęciu znajduje się Steak czy Pizza. Implementacja modelu Tiny VGG z użyciem TensorFlow."
+  }
+]

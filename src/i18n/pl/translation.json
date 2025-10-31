@@ -32,15 +32,16 @@
     "sectionIntro": "Co dotychczas osiągnąłem",
     "sectionTitle": "Doświadczenie zawodowe.",
     "nauka": {
-      "title": "Rozwój w obszarze ML/AI",
-      "company": "-",
+      "title": "Rozwijanie umiejętności w obszarze ML/AI",
+      "company": "",
       "date": "Maj 2025 - Listopad 2025",
       "points": [
-        "Python, Numpy, Pandas, Scikit Learn, Matplotlib, Seaborn, Plotly",
-        "Supervised learning, unsupervised learning, DNN, CNN, RNN/LSTM",
-        "Tensorflow, PyTorch",
-        "Anaconda, Jupyter Notebooks/Google Colab",
-        "MLOps: Flask, FastAPI, Git, CircleCI, Docker, GoogleCloud, AWS"
+        "Uczenie nadzorowane i nienadzorowane, sieci neuronowe (CNN, RNN, LSTM)",
+        "NLP, klasyfikacja tekstu, analiza sentymentu",
+        "Computer Vision, klasyfikacja obrazów",
+        "MLOps, wdrażanie modeli, automatyzacja procesu",
+        "Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, PyTorch, Anaconda, Flask, FastAPI, Docker, CircleCI, GitHub, Google Cloud, AWS, MLflow"
+
       ]
     },
     "arvato": {

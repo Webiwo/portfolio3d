@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Why I Chose ML/AI",
+    "link": "https://github.com/Webiwo/publications/blob/main/articles/ML%20workflow.md",
+    "description": "Inspired by Daniel Bourke’s article “6-Step Framework to Tackle Machine Learning Projects”, I decided to analyze the process of building ML solutions step by step. By examining each stage, I show which skills are most important – and why they motivated me to develop in this area."
+  },
+  {
+    "title": "SMS Spam Detector App",
+    "link": "http://13.51.244.189/",
+    "description": "The application runs on AWS EC2 inside a Docker container, with the image hosted in Amazon ECR. The model is trained on the Kaggle SMS Spam Collection Dataset.\nUsage: type a message in English, e.g., 'You win a new phone', and click the 'Check' button."
+  },
+  {
+    "title": "Hate Speech Detector App",
+    "link": "http://51.20.180.118/",
+    "description": "The application runs on AWS EC2 inside a Docker container, with the image hosted in Amazon ECR. The model is trained on the Kaggle Hate Speech and Offensive Language Dataset.\nUsage: type a message in English, e.g., 'We will fight against him.', and click the 'Sprawdź tekst' button."
+  },
+  {
+    "title": "Comparison of Ensemble Boosting Algorithms",
+    "link": "https://github.com/Webiwo/publications/blob/main/experiments/xgboost_catboost_adaboost_gbm_lightgbm.ipynb",
+    "description": "Google Colab Notebook – Comparison of the performance of five different Ensemble Boosting algorithms: XGBoost, CatBoost, AdaBoost, GBM, LightGBM"
+  },
+  {
+    "title": "CNN - Computer Vision",
+    "link": "https://github.com/Webiwo/publications/blob/main/experiments/Convolutional_Neural_Networks_and_Computer_Vision_with_TensorFlow.ipynb",
+    "description": "Google Colab Notebook – Convolutional Neural Networks – the model checks whether the image contains a Steak or Pizza. Implementation of a Tiny VGG model using TensorFlow."
+  }
+]

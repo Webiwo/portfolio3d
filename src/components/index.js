@@ -15,6 +15,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import ImageShowcase from "./ImageShowcase";
 import Publications from "./Publications";
+import ScrollToHashElement from "./ScrollToHashElement";
 
 export {
   Hero,
@@ -31,5 +32,6 @@ export {
   ComputersCanvas,
   StarsCanvas,
   ImageShowcase,
-  Publications
+  Publications,
+  ScrollToHashElement
 };
