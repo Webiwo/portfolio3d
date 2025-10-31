@@ -24,7 +24,17 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <ComputersCanvas
+        onLoaded={() => {
+          const hash = window.location.hash;
+          if (hash) {
+            const el = document.querySelector(hash);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        }}
+      />
 
       <div className="absolute w-full flex justify-center bottom-30 md:bottom-32">
         <a href="#about">
